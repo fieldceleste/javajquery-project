@@ -9,13 +9,20 @@
 </head>
   <body>
     <div class="container">
-        <div id="main">
-          <div id="header">
-            <h1>What programming language should I learn?</h1>
-         </div>
+      <div id="main">
+        <div id="header">
+          <h1>What programming language should I learn?</h1>
+        </div>
 
 <form id="questionsform">
- 
+
+  <h2>Enter Name</h2>
+    <div class="form-group row">
+    <div class="col-xs-4">
+    <input id="name" class="form-control" type="text">
+    </div>
+    </div>
+
   <h2>What company would you want to work for after school?</h2>
     <label for="company-ruby"><input type="radio" name="company" value="1" id="company-ruby" />Airbnb</label>
     <label for="company-java"><input type="radio" name="company" value="3" id="company-java" />Ebay</label>
@@ -51,13 +58,12 @@
     <option value="3">A little I guess..</option>
     <option value="1">TONS!</option>
   </select>
-  <br>
-  <hr>
+<br>
   <button type="submit" value="Submit">Submit</button>
-  </br>
+</br>
 </form>
 <br>
-<p><strong>The programming language you should use is <span id="answer">__</span>!</strong></p>
+<p><strong><span class="name"></span>, the programming language you should use is <span id="answer">__</span>!</strong></p>
 <p id="answer2"></p>
 </br>
 
