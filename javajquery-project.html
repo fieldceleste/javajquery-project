@@ -8,11 +8,12 @@
   <script src="js/scripts.js"></script>
 </head>
   <body>
-    <div class= "container">
+    <div class="container">
         <div id="main">
           <div id="header">
-            <h1>What programming language should I use?</h1>
+            <h1>What programming language should I learn?</h1>
          </div>
+
 <form id="questionsform">
  
   <h2>What company would you want to work for after school?</h2>
@@ -45,25 +46,21 @@
     
   
   <h2>How much programming expereince do you have?</h2>
-  <div>
-    <input type="checkbox" id="experience-python" name="expereince" value="2">
-    <label for="experience-python">None..</label>
-    <input type="checkbox" id="experience-java" name="experience" value="3">
-    <label for="experience-java">Alittle I guess</label>
-    <input type="checkbox" id="expereince-ruby" name="experience" value="1">
-    <label for="expereince-ruby">Tons and Tons of expereince!</label>
-  </div>
- 
+  <select class="form-control" id="experience">
+    <option value="2">None..</option>
+    <option value="3">A little I guess..</option>
+    <option value="1">TONS!</option>
+  </select>
   <br>
   <hr>
   <button type="submit" value="Submit">Submit</button>
   </br>
 </form>
 <br>
-<p><strong>The programming language you should use is <span id="result">__</span>!</strong></p>
-<p id="result2"></p>
+<p><strong>The programming language you should use is <span id="answer">__</span>!</strong></p>
+<p id="answer2"></p>
 </br>
-</hr>
+
      </div>
     </div>
   </body>

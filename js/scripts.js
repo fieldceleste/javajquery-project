@@ -1,35 +1,22 @@
 $(document).ready(function () {
-    $("#questionsform").submit(function () {
+    $("#questionsform").submit(function() {
         var company = parseInt($('input[name = "company"]:checked').val());
         var language = parseInt($('input[name = "language"]:checked').val());
-        var school = $("#school").val();
-        var color = $("#color").val();
-        var experience = parseInt($('input[name="experience"]').val());
-        var otherText = parseInt($('input[id="otherValue"]').val());
-        otherText.style.visibility = 'hidden';
-
+        var school = parseInt($("#school").val());
+        var color = parseInt($("#color").val());
+        var experience = parseInt($("#experience").val());
+        console.log(experience)
         
 
+var result = company +  language + school + color + experience;
 
-
-
-
-
-
-
-
-
-var result = company +  language + school + color + expereince;
-
-        if (result <= 6) {
-            $("#result").text("Ruby");
-        } else if (result <= 11 ) {
-            $("#result").text("Python");
-        } else if (result <= 16) {
-            $("#result").text("Javascript");
+        if (result <= 5) {
+        $("#answer").text("Ruby");
+         } else if (result <= 11 ) {
+        $("#answer").text("Python");
+          } else if (result <= 16) {
+        $("#answer").text("Javascript");
         }
-        
-
-        event.preventDefault();
+event.preventDefault();
     });
 });
