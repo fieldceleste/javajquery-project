@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(148, 183, 228);
+    font-family: Helvetica;
+    text-align: justify;
+}
+#main {
+    width: 90%;
+    max-width: 900px;
+    border: 1px purple;
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(250, 252, 159);
+    border-radius: 10px;
+}
+
+#header {
+    margin-top: 0;
+    border: 2px solid black;
+    padding: 5px;
+    height: 250px;
+    background: rgb(183, 233, 102);
+    background-image: url("https://fossbytes.com/wp-content/uploads/2019/04/Microsoft-bosque-programming-language.jpg");
+    color: white;
+    font-size: larger;
+}
+    
+label {
+    display: block;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(31, 25, 25);
+    margin: 1em 0;
+    padding: 0;
+}
+h2 {
+    text-decoration: underline;
+    color: rgb(130, 131, 204);
+    clear: both;
+    padding-top: 20px;
+}
+p {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+button {
+    width: 100px;
+    margin-top: 20px;
+}
+input {
+    width: 30px;
+    margin-left: 20px;
+}
