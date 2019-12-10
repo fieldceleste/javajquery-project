@@ -1,73 +1,78 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Programming Language Suggester</title>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery-3.4.1.js"></script>
-  <script src="js/scripts.js"></script>
+    <title>Programming Language Suggester</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
-  <body>
+
+<body>
     <div class="container">
-      <div id="main">
-        <div id="header">
-          <h1>What programming language should I learn?</h1>
+        <div id="main">
+            <div id="header">
+                <h1>What programming language should I learn?</h1>
+            </div>
+
+            <form id="questionsform">
+
+                <h2>Enter Name</h2>
+                <div class="form-group row">
+                    <div class="col-xs-4">
+                        <input id="name" class="form-control" type="text">
+                    </div>
+                </div>
+
+                <h2>What company would you want to work for after school?</h2>
+                <label for="company-ruby"><input type="radio" name="company" value="1"
+                        id="company-ruby" />Airbnb</label>
+                <label for="company-java"><input type="radio" name="company" value="3" id="company-java">Ebay</label>
+                <label for="company-python"><input type="radio" name="company" value="2"
+                        id="company-python" />Spotify</label>
+
+                <h2>What do you look for in a coding language?</h2>
+                <label for="language-java"><input type="radio" name="language" value="3" id="company-java" />Fast
+                    processing</label>
+                <label for="language-python"><input type="radio" name="language" value="2" id="language-python" />Great
+                    libaries</label>
+                <label for="language-ruby"><input type="radio" name="language" value="1" id="language-ruby" />Quick to
+                    develop</label>
+
+                <h2>What type of programmer do you want to be after school?</h2>
+                <select class="form-control" id="school">
+                    <option value="2">Data Scientist</option>
+                    <option value="3">Software engineer</option>
+                    <option value="1">Web developer</option>
+                </select>
+
+
+
+                <h2>Out of these colors what is your favorite?</h2>
+                <select class="form-control" id="color">
+                    <option value="1">Red</option>
+                    <option value="3">Yellow</option>
+                    <option value="2">Green</option>
+                </select>
+                <h2>How much programming expereince do you have?</h2>
+                <select class="form-control" id="experience">
+                    <option value="2">None..</option>
+                    <option value="3">A little I guess..</option>
+                    <option value="1">TONS!</option>
+                </select>
+                <br>
+                <button type="submit" value="Submit">Submit</button>
+                </br>
+            </form>
+            <br>
+            <p><strong><span class="name"></span>, the programming language you should use is <span
+                        id="answer">__</span>!</strong></p>
+            <p id="answer2"></p>
+            </br>
+
         </div>
-
-<form id="questionsform">
-
-  <h2>Enter Name</h2>
-    <div class="form-group row">
-    <div class="col-xs-4">
-    <input id="name" class="form-control" type="text">
     </div>
-    </div>
+</body>
 
-  <h2>What company would you want to work for after school?</h2>
-    <label for="company-ruby"><input type="radio" name="company" value="1" id="company-ruby" />Airbnb</label>
-    <label for="company-java"><input type="radio" name="company" value="3" id="company-java" />Ebay</label>
-    <label for="company-python"><input type="radio" name="company" value="2" id="company-python" />Spotify</label>
-             
-  <h2>What do you look for in a coding language?</h2>
-    <label for="language-java"><input type="radio" name="language" value="3" id="company-java"/>Fast processing</label>
-    <label for="language-python"><input type="radio" name="language" value="2" id="language-python"/>Great libaries</label>
-    <label for="language-ruby"><input type="radio" name="language" value="1" id="language-ruby" />Quick to develop</label>
- 
-               
-  <h2>What type of programmer do you want to be after school?</h2>
-  <select class="form-control" id="school">
-    <option value="2">Data Scientist</option>
-    <option value="3">Software engineer</option>
-    <option value="1">Web developer</option>
-  </select>
- 
-    
-            
-  <h2>Out of these colors what is your favorite?</h2>
-  <select class="form-control" id="color">
-    <option value="1">Red</option>
-    <option value="3">Yellow</option>
-    <option value="2">Green</option>
-  </select>
- 
-    
-  
-  <h2>How much programming expereince do you have?</h2>
-  <select class="form-control" id="experience">
-    <option value="2">None..</option>
-    <option value="3">A little I guess..</option>
-    <option value="1">TONS!</option>
-  </select>
-<br>
-  <button type="submit" value="Submit">Submit</button>
-</br>
-</form>
-<br>
-<p><strong><span class="name"></span>, the programming language you should use is <span id="answer">__</span>!</strong></p>
-<p id="answer2"></p>
-</br>
-
-     </div>
-    </div>
-  </body>
 </html>
