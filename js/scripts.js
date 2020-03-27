@@ -12,7 +12,7 @@ $(document).ready(function () {
         var result = company + language + school + color + experience;
 
         $(".name").text(nameInput);
-        if (result <= 5) {
+        if (result <= 4) {
             $("#answer").text("Ruby, so you can build web applicaions, desktop games, and mobile apps!");
         } else if (result <= 11) {
             $("#answer").text("Python, so you can do data analysis, software application, and build beautiful websites!");
